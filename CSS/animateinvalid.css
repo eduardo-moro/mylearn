@@ -1,0 +1,21 @@
+.erro{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%,-80%);
+    background: #111;
+    border-radius: 8px;
+    padding: 10px;
+    -webkit-animation: fadeinout 2s linear forwards;
+    animation: fadeinout 2s linear forwards;
+}
+
+@-webkit-keyframes fadeinout {
+  0%,100% { opacity: 0; }
+  50% { opacity: 1; }
+}
+
+@keyframes fadeinout {
+  0%,100% { opacity: 0; }
+  50% { opacity: 1; }
+}

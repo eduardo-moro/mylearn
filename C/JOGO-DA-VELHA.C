@@ -1,26 +1,11 @@
-#include<stdio.h>
-#include<string.h>
-
-int dif = 0;
-char mat[4][4];
 /*
 esta fun��o preenche a posi��o informada pelos
 par�metros lin (linha) e col (coluna) com �X� ou �O� que s�o passados para a fun��o atrav�s de
-par�metro jog. A fun��o retorna um dos seguintes valores:
+par�metro jog. A função retorna um dos seguintes valores:
 0 � se a jogada � v�lida;
 1 � se a posi��o informada � inv�lida;
 2 � se a posi��o informada j� est� preenchida.
 */
-int jogada_usuario(int lin,int col, char jog){
-    char null = ' ';
-    if (strcmp(mat[lin][col],null)){
-    return 0;
-   }else
-    if ((mat[lin][col] == 'x')||(mat[lin][col] == 'o')){
-    return 2;
-   }else
-    return 1;
-};
 
 /*
 esta fun��o realiza a jogada do computador. O
@@ -30,55 +15,25 @@ n�vel b�sico do computador; outra fun��o para a jogada n�vel intermedi
 fun��o para a jogada n�vel avan�ado do computador. Estas fun��es dever�o ser chamadas dentro
 desta fun��o jogada_computador.
 */
-void jogada_computador(char jog, int nivel){
-};
+
 /*
 esta fun��o retorna 1 se o usu�rio quer jogar contra o computador ou 2 caso o
 usu�rio queira jogar contra outro usu�rio. Caso o usu�rio queira jogar contra o computador ele
 tamb�m deve escolher o n�vel da jogada do computador: b�sico, intermedi�rio ou avan�ado.
 */
-int menu( ){
-    int opc = 0;
-    printf("1. jogar homem versus homem\n");
-    printf("2. jogar homem versus m�quina\n");
-     scanf("%d",&opc);
-        switch (opc){
-        case '1': inicializa_velha();break;
-        case '2': printf("escolha a dificuldade mortal:\n")
-                  printf("1. f�cil.\n");
-                  printf("2. m�dia..\n");
-                  printf("3. dif�cil...\n");break;
-                   scanf("%d",&opc);
-                  switch("%d",&opc){
-                  case '1':dif = 1;break;
-                  case '2':dif = 2;break;
-                  case '3':dif = 3;break;
-                   default printf("entrada inv�lida");//loop na main
-                  }
-        default printf("entrada inv�lida");//loop na main
-    }
-
-};
-
 /*
 esta fun��o define via entrada do usu�rio quem �
 o jogador �X� e quem � o jogador �O�.
 */
-void escolha_simb(char *jog1, char *jog2){
-};
 
 /*
  esta fun��o inicializa a matriz do jogo da velha com vazio.
 */
-void inicializa_velha(){
-};
 
 /*
  esta fun��o retorna 1 se o jogador ganhou e zero caso
 contr�rio. O par�metro jog conter� �X� ou �O�.
 */
-int verifica_ganhador(char jog){
-};
 
 //Criar uma fun��o que grava em um arquivo txt as informa��es abaixo, no seguinte formato:
 //Nome do Jogador 1; s�mbolo; Nome do Jogador 2; s�mbolo.

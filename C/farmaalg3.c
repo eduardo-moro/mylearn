@@ -1,0 +1,1 @@
+#include<stdio.h>#include<string.h>void main(){    int x,y;//horizontal x, vertical y    int t,i,r;    printf("entre com o numero de casos: ");    scanf("%d",&t);    for(i = 0;i < t; i++){    printf("\nentre com o X e Y do tabuleiro: ");    scanf("%d %d",&x,&y);    }}

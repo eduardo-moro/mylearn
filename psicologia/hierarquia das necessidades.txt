@@ -1,0 +1,8 @@
+<h1> A hierarquia das necessidades: </h1>
+
+  (abraham mashlow)
+  A-R:
+  estima:
+  social:nescessidade do pertencimento à um grupo social, por questões de suprimento psicologico;
+  segurança: nescessidade da moradia, da segurança e do cuidado;
+  fisiologicas: necessidades que possuimos por questão de fisiologia.

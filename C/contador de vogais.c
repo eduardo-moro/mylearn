@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <string.h>
-
 int qtdchar(char texto[81],char v[]){
   int i,ii = 0;
   int cnt = 0;
@@ -39,8 +38,9 @@ int main (){
         printf("%d",abc);
         if (i < (linha - 1)){
           printf("\n");
-
         }
       }
     }
-  }}
+  }
+  return 0;
+}
